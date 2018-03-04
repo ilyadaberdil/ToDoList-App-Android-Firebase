@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "493095927735",
+    "firebase_url": "https://mobil-todo-list.firebaseio.com",
+    "project_id": "mobil-todo-list",
+    "storage_bucket": "mobil-todo-list.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493095927735:android:dc4d14eb071b2c54",
+        "android_client_info": {
+          "package_name": "com.example.ilyada.tododenemem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493095927735-b7ak0d4u0h0c3odffnduch8qt9l355el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAuIoXVKRj9VroE3yXoClGWb42g4LPmQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">todoDenemem</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="speech_destek">Speech Desteklemiyor..</string>
+    <string name="action_settings">Settings</string>
+    <string name="speech_get_baslik">Not Başlığı Ne Olsun?</string>
+    <string name="speech_get_icerik">Notun içeriğini Oluştur!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EEEEEE"
+    android:windowSoftInputMode="adjustPan"
+tools:context="com.example.ilyada.tododenemem.Not_Olustur_Activity">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:weightSum="13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlık: "
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tv_baslik"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Başlık"
+                android:maxLength="30"
+                />
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/btn_speech_baslik"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_mic"
+                android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.8"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notunuzu Giriniz :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+            <ImageButton
+                android:id="@+id/btn_speech_icerik"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_mic"
+                android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_weight="3.7"
+        android:background="#FFF59D"
+        android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+
+                    android:id="@+id/tv_icerik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Not ToDo"
+                    />
+
+
+            </LinearLayout>
+
+
+
+</ScrollView>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_kategori"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Kategori Seç :   "
+                />
+
+            <Spinner
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_kategori"
+                android:splitMotionEvents="true"
+                android:id="@+id/spinner_kategori"
+                android:layout_width="match_parent"
+                android:background="#F0F0F0"
+                android:layout_height="wrap_content"
+
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_priority"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Priority Belirle: "
+                />
+
+            <Spinner
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_priority"
+                android:splitMotionEvents="true"
+                android:id="@+id/spinner_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_deadline"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Deadline Belirle: "
+                />
+            <DatePicker
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/datepicker"
+                android:layout_width="wrap_content"
+                android:calendarViewShown="false"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:layout_below="@id/tv_priority"
+
+                ></DatePicker>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_kaydet"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="#F0F0F0"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="KAYDET"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
